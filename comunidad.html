@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Inicio Fan Pets</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="Index.css">
+  </head>
+  <body>
+    <header>
+ 
+      <img class="logo" src="./imagenes/UserMascota.png" alt="logo">        
+      <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+       <nav class="nav" id="nav">
+        <button id="cerrar" class="cerrar-menu"><i class="bi bi-x-lg"></i></button>
+        <ul class="nav-list">
+          <li><a href="./index.html">INICIO</a></li>
+          <li><a href="./registro.html">REGISTRO</a></li>
+          <li><a href="./comunidad.html">COMUNIDAD</a></li>
+          <li><a href="./contacto.html">CONTACTO</a></li>
+          <li><a href="#">OTRA</a></li>
+        </ul>
+       </nav>
+      </header>
+
+      <div class="container">
+        <h1>Comunidad Ayuda</h1>
+    </div>   
+      <img src="imagenes/sebusca1.jpg" alt="imagenregitro"style="display: block; margin: auto;">
+<form method="POST" action="procesar_publicacion.php">
+    <label for="titulo">Título:</label>
+    <input type="text" id="titulo" name="titulo" required>
+    
+    <label for="contenido">Contenido:</label>
+    <textarea id="contenido" name="contenido" required></textarea>
+    
+    <label for="imagen">Imagen:</label>
+    <input type="file" id="imagen" name="imagen">
+    
+    <label for="categoria">Categoría:</label>
+    <select id="categoria" name="categoria">
+      <option value="noticias">Noticias</option>
+      <option value="eventos">Eventos</option>
+      <option value="articulos">Artículos</option>
+    </select>
+    
+    <button type="submit">Publicar</button>
+  </form>
+  <footer>
+    <p>FanPets &copy; 2023</p>
+  </footer>
+  <script src="./menu.js"></script>     
+</body>
+</html>
+  

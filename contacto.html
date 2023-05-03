@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Inicio Fan Pets</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="Index.css">
+  </head>
+  <body>
+    <header>
+ 
+		<img class="logo" src="./imagenes/UserMascota.png" alt="logo">        
+		<button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+		 <nav class="nav" id="nav">
+		  <button id="cerrar" class="cerrar-menu"><i class="bi bi-x-lg"></i></button>
+		  <ul class="nav-list">
+			<li><a href="./index.html">INICIO</a></li>
+			<li><a href="./registro.html">REGISTRO</a></li>
+			<li><a href="./comunidad.html">COMUNIDAD</a></li>
+			<li><a href="./contacto.html">CONTACTO</a></li>
+			<li><a href="#">OTRA</a></li>
+		  </ul>
+		 </nav>
+		</header>
+	<main>
+		<h1>Contáctanos</h1>
+		
+		<div class="formulario">
+			<form action="enviar.php" method="POST">
+				<label for="nombre">Nombre:</label>
+				<input type="text" id="nombre" name="nombre" required>
+				<label for="email">Correo electrónico:</label>
+				<input type="email" id="email" name="email" required>
+				<label for="mensaje">Mensaje:</label>
+				<textarea id="mensaje" name="mensaje" required></textarea>
+				<button type="submit">Enviar</button>
+			</form>
+		</div>
+		
+		<div class="informacion">
+			<h2>Información de contacto</h2>
+			<p>Dirección: Calle Falsa 123, Ciudad Ficticia</p>
+			<p>Teléfono: 555-1234</p>
+			<p>Correo electrónico: contacto@tusitio.com</p>
+			<h2>Preguntas frecuentes</h2>
+			<p>¿Cómo puedo hacer una devolución?</p>
+			<p>¿Cuál es el tiempo de envío?</p>
+		</div>
+	</main>
+	
+	<footer>
+		<p>FanPets &copy; 2023</p>
+	</footer>
+	<script src="./menu.js"></script>
+</body>
+</html>
